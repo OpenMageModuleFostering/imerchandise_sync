@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/IMerchandise_Sync",
+    "type": "magento-module",
+    "license": "Open-Software-License-(OSL)",
+    "homepage": "",
+    "description": "Is used by iMerchandise iOS application for synchronizing with Magento.",
+    "authors": [
+    {
+        "name": "Dan Dumitrascu",
+        "email": "ddumitrascu@gmail.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

@@ -1,0 +1,91 @@
+<config>
+	<api>
+		<resources>
+			<imerchandise_sync translate="title" module="im_sync">
+				<title>iMerchandise Sync API calls</title>
+				<model>im_sync/core_api</model>
+				<acl>imerchandise/sync</acl>
+				<methods>
+					<getCurrentRootCategoryID translate="title" module="im_sync">
+						<title>Returns the id of the root category of the current store</title>
+						<acl>imerchandise/sync/allaccess</acl>
+					</getCurrentRootCategoryID>
+					<createConfigAttribute translate="title" module="im_sync">
+						<title>Create a configurable attribute for a configurable product</title>
+						<acl>imerchandise/sync/allaccess</acl>
+					</createConfigAttribute>
+					<assignProductsToConfigurable translate="title" module="im_sync">
+						<title>Assign a simple product to a configurable product</title>
+						<acl>imerchandise/sync/allaccess</acl>
+					</assignProductsToConfigurable>
+					<createAttributeOption translate="title" module="im_sync">
+						<title>Create an option for an existing product attribute</title>
+						<acl>imerchandise/sync/allaccess</acl>
+					</createAttributeOption>
+					<skuExists translate="title" module="im_sync">
+						<title>Checks if a sku exists</title>
+						<acl>imerchandise/sync/allaccess</acl>
+					</skuExists>
+					<createAssignAttribute translate="title" module="im_sync">
+						<title>Creates an attribute to be used by configurable products</title>
+						<acl>imerchandise/sync/allaccess</acl>
+					</createAssignAttribute>
+			
+				</methods>
+                <faults module="core">
+                    <configurable_product_does_not_exist>
+                        <code>100</code>
+                        <message>Configurable product does not exist.</message>
+                    </configurable_product_does_not_exist>
+                    <attribute_does_not_exist>
+                        <code>101</code>
+                        <message>Configurable attribute does not exist.</message>
+                    </attribute_does_not_exist>
+                    <configurable_attribute_already_exists>
+                        <code>102</code>
+                        <message>Configurable attribute already exists for configurable product.</message>
+                    </configurable_attribute_already_exists>
+                    <attribute_create_error>
+                    	<code>103</code>
+                    	<message>Couldn't create the a attribute.</message>
+                    </attribute_create_error>
+                    <option_does_not_exist>
+                    	<code>104</code>
+                    	<message>Option does not exist.</message>
+                    </option_does_not_exist>
+                    <attribute_option_already_exists>
+                    	<code>105</code>
+                    	<message>Option already exists for attribute.</message>
+                    </attribute_option_already_exists>
+                    <category_does_not_exist>
+                    	<code>106</code>
+                    	<message>Category does not exist.</message>
+                    </category_does_not_exist>
+                    <product_does_not_exist>
+                    	<code>107</code>
+                    	<message>Product does not exist</message>
+                    </product_does_not_exist>
+				</faults>
+			</imerchandise_sync>
+		</resources>
+		<resources_alias>
+			<core>im_sync</core>
+		</resources_alias>
+		<acl>
+			<resources>
+				<imerchandise translate="title" module="im_sync">
+					<title>iMerchandise</title>
+					<sort_order>100</sort_order>
+					<sync translate="title" module="im_sync">
+						<title>Sync</title>
+						<sort_order>100</sort_order>
+						<allaccess translate="title" module="im_sync">
+							<title>iMerchandise Sync access.</title>
+							<sort_order>10</sort_order>
+						</allaccess>
+					</sync>
+				</imerchandise>
+			</resources>
+		</acl>
+	</api>
+</config>

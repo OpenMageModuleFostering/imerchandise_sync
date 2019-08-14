@@ -1,0 +1,19 @@
+<config>
+	<modules>
+		<IMerchandise_Sync>
+			<version>0.0.0.1</version>
+		</IMerchandise_Sync>
+	</modules>
+	<global>
+		<models>
+			<im_sync>
+				<class>IMerchandise_Sync_Model</class>
+			</im_sync>
+		</models>
+		<helpers>
+			<im_sync>
+				<class>IMerchandise_Sync_Helper</class>
+			</im_sync>
+		</helpers>
+	</global>
+</config>

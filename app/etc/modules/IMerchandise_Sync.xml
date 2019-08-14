@@ -1,0 +1,11 @@
+<config>
+	<modules>
+		<IMerchandise_Sync>
+			<active>true</active>
+			<codePool>community</codePool>
+			<depends>
+				<Mage_Api />
+			</depends>
+		</IMerchandise_Sync>
+	</modules>
+</config>
