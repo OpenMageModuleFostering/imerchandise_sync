@@ -1,17 +1,20 @@
 <?xml version="1.0"?>
 <package>
     <name>IMerchandise_Sync</name>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <stability>stable</stability>
     <license uri="http://opensource.org/licenses/osl-3.0.php">Open Software License (OSL)</license>
     <channel>community</channel>
     <extends/>
     <summary>Is used by iMerchandise iOS application for synchronizing with Magento.</summary>
-    <description>Is used by iMerchandise iOS application for synchronizing with Magento.</description>
+    <description>Is used by iMerchandise iOS application for synchronizing with Magento.&#xD;
+&#xD;
+ - Uploads products created with iMerchandise from your iOS device to your Magento server.&#xD;
+ - Creates associated products and uploads images</description>
     <notes>Stable version</notes>
-    <authors><author><name>Dan Dumitrascu</name><user>ddumitrascu</user><email>ddumitrascu@gmail.com</email></author></authors>
-    <date>2013-06-11</date>
-    <time>15:11:36</time>
+    <authors><author><name>Dan Dumitrascu</name><user>ddumitrascu</user><email>dan@webservice-usa.com</email></author></authors>
+    <date>2013-06-17</date>
+    <time>08:00:11</time>
     <contents><target name="magecommunity"><dir name="IMerchandise"><dir name="Sync"><dir name="Helper"><file name="Data.php" hash="9627ae65741b47f72c8fe9b46812a3f4"/></dir><dir name="Model"><dir name="Core"><file name="Api.php" hash="e18b8d0a7011ca7c3aa6fb78ab82965e"/></dir></dir><dir name="etc"><file name="api.xml" hash="524b180f4f32490800c40cd84e880203"/><file name="config.xml" hash="d65b53ec4c2a5346db82ac60560a2f0c"/></dir><file name=".DS_Store" hash="c510d69530e48d2dc10dc588e527decd"/></dir><file name=".DS_Store" hash="3455fdd0e64ee39aaea229612fc7ccbf"/></dir></target><target name="mageetc"><dir name="modules"><file name="IMerchandise_Sync.xml" hash="9b6b5c7a238ce5609895d1afc47e576e"/></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php><package><name>Mage_Api</name><channel>community</channel><min>1.6.0.0</min><max>1.7</max></package></required></dependencies>
